@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 2</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <main>
+        <section class="content-container">
+            <div class="photos-section">
+                <h1>Mars Rover Photos</h1>
+                <div class="search-section">
+                    <label for="date">Earth Date:</label>
+                    <input type="date" id="date" value="2015-07-02">
+                    <button onclick="searchByDate()">Find</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Rover Name</th>
+                            <th>Camera</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody id="photo-list">
+                    </tbody>
+                </table>
+                <button onclick="previousPage()">Previous</button>
+                <button onclick="nextPage()">Next</button>
+            </div>
 
+            <div class="detail-section">
+                <h2>Photo Detail</h2>
+                <div id="photo-detail">
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <script src="./js/index.js"></script>
+</body>
+</html>
